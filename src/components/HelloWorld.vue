@@ -30,7 +30,7 @@
                             :src="element.url" alt=""
                             style="width:100%;height:100%;"
                             v-if="element.url">
-                <p>{{element.id}}</p>
+<!--                <p>{{element.id}}</p>-->
 <!--                <p> 左: {{ element.left }} / 上: {{ element.top }} </p>-->
 <!--                <p>左上: {{ element.leftTop }} / 右上: {{ element.rightTop }}</p>-->
 <!--                <p>左下: {{ element.leftBottom }} / 右下: {{ element.rightBottom }}</p>-->
@@ -63,14 +63,15 @@
                         style="width:100%;height:100%;"
                         v-if="element.url">
 
-                <input type="text" >
-                <p>{{element.id}}</p>
+<!--                <input type="text" >-->
+<!--                <p>{{element.id}}</p>-->
                 <!--                <p> 左: {{ element.left }} / 上: {{ element.top }} </p>-->
                 <!--                <p>左上: {{ element.leftTop }} / 右上: {{ element.rightTop }}</p>-->
                 <!--                <p>左下: {{ element.leftBottom }} / 右下: {{ element.rightBottom }}</p>-->
                 <!--                <p>center : {{element.center}}</p>-->
                 <!--                <p>name : {{element.id}}</p>-->
             </vue-draggable-resizable>
+
         </div>
 
 
@@ -182,7 +183,7 @@
         },
         methods: {
             onDragStartCallback(element){
-                if(element.userDisabledMove) return false
+              if(element.userDisabledMove) return false
             },
             initActiveState(){
                 this.canResetPositionImageItem = null
